@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "curly": "error",
+    "comma-dangle": "off",
+    "camelcase": "off",
+    "linebreak-style": ["error", "unix"],
+    "@typescript-eslint/camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/class-name-casing": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "none",
+        "bracketSpacing": true,
+        "tabWidth": 2,
+        "printWidth": 120,
+        "parser": "typescript",
+        "quoteProps": "preserve",
+        "arrowParens": "always"
+      }
+    ]
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "project": "./tsconfig.json"
+  }
+}
