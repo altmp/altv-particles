@@ -1,3 +1,5 @@
+![.github/workflows/deploy.yml](https://github.com/IchigoWalker/altv-particles/workflows/.github/workflows/deploy.yml/badge.svg)
+
 # particles-db
 
 ## Project setup
