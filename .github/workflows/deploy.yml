@@ -25,7 +25,14 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - run: mkdir deploy
+      - run: cp -r ./dist ./deploy/dist
+      - run: cp -r ./public ./deploy/public
+      - run: cp index.html ./deploy
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          cname: particles.altv.mp
