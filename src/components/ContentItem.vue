@@ -4,14 +4,14 @@
 
     <img
       v-show="!isPlaying.value"
-      :src="`https://cdn.altv.mp/particles/${id}.jpg`"
+      :src="`https://cdn.alt-mp.com/particles/${id}.jpg`"
       loading="lazy"
     />
 
     <video
       v-show="isPlaying.value"
       ref="video"
-      :src="`https://cdn.altv.mp/particles/${id}.mp4`"
+      :src="`https://cdn.alt-mp.com/particles/${id}.mp4`"
       preload="none"
       muted
       loop
